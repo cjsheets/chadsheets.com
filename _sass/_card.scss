@@ -20,6 +20,7 @@
   position: fixed;
   left: calc(50vw - 230px);
   top: calc(50vh - 150px);
+    z-index: 1;
   }
 
   .user-card-avatar {

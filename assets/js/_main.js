@@ -51,6 +51,17 @@ $(document).ready(function() {
     // make it unique to apply your CSS animations just to this exact popup
     mainClass: 'mfp-fade'
   });
+
+var $grid = $('.grid').masonry({
+      "itemSelector": ".grid-item",
+      "columnWidth": 400,
+      fitWidth: true
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
+
 });
 
 ( function( $ ) {
