@@ -59,7 +59,7 @@ This package contains:
 
 ### Credit
 
-* Based on [mmistakes/so-simple-theme](https://github.com/mmistakes/so-simple-theme)
+* Loosely based on [mmistakes/so-simple-theme](https://github.com/mmistakes/so-simple-theme)
 
 ### To-Do:
 
@@ -75,6 +75,6 @@ This package contains:
 
 MIT License
 
-* I would appriciate if you asked before using my background photo
+* I would appreciate if you asked before using my background photo
 
 [![Analytics](https://cjs-beacon.appspot.com/UA-10006093-3/github/cjsheets/cjsheets.github.io?pixel)](https://github.com/cjsheets/cjsheets.github.io)
