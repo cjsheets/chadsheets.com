@@ -126,5 +126,10 @@ $(document).ready(function() {
 	}
 
 	enquire.register("screen and (min-width : 480px)", initAdjustWindow(), false);
-		
+
+
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
 } )( jQuery );

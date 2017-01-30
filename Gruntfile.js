@@ -13,6 +13,7 @@ module.exports = function(grunt) {
         'node_modules/imagesloaded/imagesloaded.pkgd.js',
         'node_modules/skrollr/src/skrollr.js',
         'node_modules/enquire.js/dist/enquire.js',
+        'node_modules/masonry-layout/dist/masonry.pkgd.js',
         '!assets/js/scripts.min.js'
       ]
     },
@@ -23,6 +24,7 @@ module.exports = function(grunt) {
             'node_modules/imagesloaded/imagesloaded.pkgd.js',
             'node_modules/skrollr/src/skrollr.js',
             'node_modules/enquire.js/dist/enquire.js',
+            'node_modules/masonry-layout/dist/masonry.pkgd.js',
             'assets/js/plugins/*.js',
             'assets/js/_*.js'
           ]
