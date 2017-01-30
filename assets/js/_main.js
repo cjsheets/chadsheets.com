@@ -70,6 +70,45 @@ $grid.imagesLoaded().progress( function() {
 //   });
 // });
 
+
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 55
+          }, 1000);
+          return false;
+        }
+      }
+    });
+    // var aboutOffset = $("#slide-2").offset().top - 200;
+    // var portfolioOffset = $("#slide-3").offset().top - 200;
+    // var $w = $(window).scroll(function(){
+    //   if ( $('#about-link').hasClass('active') ) {
+    //     if ( $w.scrollTop() > aboutOffset ) {   
+    //       $('#about-link').removeClass('active');
+    //       $('#portfolio-link').addClass('active');
+    //     }
+    //   }
+    //   if ( $('#portfolio-link').hasClass('active') ) {
+    //     if ( $w.scrollTop() < aboutOffset ) {   
+    //       $('#about-link').addClass('active');
+    //       $('#portfolio-link').removeClass('active');
+    //     }
+    //     if ( $w.scrollTop() > portfolioOffset ) {   
+    //       $('#contact-link').addClass('active');
+    //       $('#portfolio-link').removeClass('active');
+    //     }
+    //   }
+    //   if ( $('#contact-link').hasClass('active') ) {
+    //     if ( $w.scrollTop() < portfolioOffset ) {   
+    //       $('#contact-link').removeClass('active');
+    //       $('#portfolio-link').addClass('active');
+    //     }
+    //   }
+    // });
 });
 
 ( function( $ ) {

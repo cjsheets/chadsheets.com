@@ -108,6 +108,7 @@ a {
 
 	&:hover {
 		color: darken($link-color, 20);
+	    text-decoration: none;
 	}
 
 	&:focus {

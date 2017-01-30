@@ -1,13 +1,13 @@
 # Site navigation links
 
 - title: About
-  url: /about/
+  url: /
 
 - title: Projects
-  url: /articles/
+  url: '#slide-2'
 
 - title: Contact
-  url: /blog/
+  url: '#slide-3'
 
 - title: Résumé
-  url: /theme-setup/
+  url: /assets/doc/ChadSheets-Resume-Extended.pdf

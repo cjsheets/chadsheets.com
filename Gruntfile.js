@@ -10,6 +10,8 @@ module.exports = function(grunt) {
         'Gruntfile.js',
         'assets/js/*.js',
         'assets/js/plugins/*.js',
+        'node_modules/jquery/dist/jquery.js',
+        'node_modules/bootstrap/js/dist/carousel.js',
         'node_modules/imagesloaded/imagesloaded.pkgd.js',
         'node_modules/skrollr/src/skrollr.js',
         'node_modules/enquire.js/dist/enquire.js',
@@ -21,6 +23,8 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'assets/js/scripts.min.js': [
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/bootstrap/js/dist/carousel.js',
             'node_modules/imagesloaded/imagesloaded.pkgd.js',
             'node_modules/skrollr/src/skrollr.js',
             'node_modules/enquire.js/dist/enquire.js',

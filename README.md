@@ -1,8 +1,12 @@
 # Personal Portfolio
 
-This site is published to [cjsheets.github.io](cjsheets.github.io) and is the landing page for [chadsheets.com](chadsheets.com).
+This site is published to [cjsheets.github.io](https://cjsheets.github.io) and is the landing page for [chadsheets.com](http://chadsheets.com).
 
 ![](assets/img/site-screenshot.jpg?raw=true)
+
+The site provides my updated [resume](assets/doc/ChadSheets-Resume-Extended.pdf), a list of projects 
+I've worked on and my contact information. I occasionally post here: [blog.chadsheets.com](https://blog.chadsheets.com)
+as well.
 
 
 ## Install
@@ -48,7 +52,7 @@ This package contains:
 | Front-End | Back-End |
 | ------- | ------- |
 | Jekyll | GitHub Pages |
-| JS | Cloudflare |
+| Bootstrap | Cloudflare |
 | HTML5/SCSS | Formspree |
 | Grunt | |
  
@@ -59,10 +63,18 @@ This package contains:
 
 ### To-Do:
 
+* Fix mobile view
 * Add carousel for projects
+* Bottom margin visible in firefox
+* Remove unused classes and libs
+  * magnific-popup
+  * Burbon / grid / neat
+  * /js/(plugins/vendors)
 
 ### License
 
 MIT License
+
+* I would appriciate if you asked before using my background photo
 
 [![Analytics](https://cjs-beacon.appspot.com/UA-10006093-3/github/cjsheets/cjsheets.github.io?pixel)](https://github.com/cjsheets/cjsheets.github.io)

@@ -42,15 +42,7 @@ owner:
   github: #username
   stackexchange: #http://stackoverflow.com/users/123456/username
   linkedin: #username
-  instagram: #username
-  flickr: #username
-  tumblr: #username
   pinterest: #username
-  weibo: #userid
   google:
     plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
+    analytics: UA-82046664-1
