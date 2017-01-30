@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Site Title
+title: Chad Sheets | Portfolio
 locale: en_US
-description: Describe your website here.
+description: Chad Sheets (cjsheets) - Full Stack Developer | Portfolio
 logo: site-logo.png
 search: true
 url: http://localhost:4000
@@ -35,9 +35,9 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Your Name
+  name: Chad Sheets
   avatar: bio-photo.jpg
-  email: you@email.com
+  email: cjsheets@gmail.com
   disqus-shortname:
   twitter: #username
   facebook: #username

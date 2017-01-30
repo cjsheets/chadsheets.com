@@ -62,6 +62,14 @@ $grid.imagesLoaded().progress( function() {
   $grid.masonry('layout');
 });
 
+// var $container = $('#slide-2');
+// $container.imagesLoaded(function(){
+//   $container.masonry({
+//     itemSelector : '.item',
+//     columnWidth : 240
+//   });
+// });
+
 });
 
 ( function( $ ) {
