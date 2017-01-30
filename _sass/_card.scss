@@ -1,0 +1,71 @@
+
+.user-card {
+  width: 400px;
+  max-width: calc(100vw - 2em);
+  background: #FFFFFF;
+  border-radius: 2px;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.5);
+  }
+
+.card {
+  width: 460px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  padding: 4.5em 3em;
+  text-align: center;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.5);
+  margin: auto;
+  position: fixed;
+  left: calc(50vw - 230px);
+  top: calc(50vh - 150px);
+  }
+
+  .user-card-avatar {
+    float: left;
+    user-select: none;
+    width: 125px;
+    height: 125px;
+  }
+
+  .user-card-avatar p {
+    position: absolute;
+    top: 172px;
+    left: 62px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    cursor: pointer;
+  }
+
+  .user-card-avatar p:hover {
+    border-bottom: 1px dotted #aaaaaa;
+  }
+  
+  .user-card-avatar-image {
+    position: absolute;
+    top: 32px;
+    left: 16px;
+    z-index: 1;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    pointer-events: none;
+  }
+  .user-info {
+    width: 70%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .user-links {
+    font-weight: 300;
+    width: 100%;
+    position: absolute;
+    bottom: -80px;
+    left: 0px;
+    font-size: 0.9rem;
+  }
+  .user-card-title {
+    text-transform: uppercase;
+  }

@@ -1,0 +1,13 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: Projects
+  url: /articles/
+
+- title: Contact
+  url: /blog/
+
+- title: Résumé
+  url: /theme-setup/

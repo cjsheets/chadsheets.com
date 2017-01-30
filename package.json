@@ -1,0 +1,21 @@
+{
+  "name": "so-simple-theme",
+  "author": "Michael Rose <michael@mademistakes.com>",
+  "homepage": "http://mmistakes.github.io/so-simple-theme/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mmistakes/so-simple-theme.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.2"
+  },
+  "dependencies": {
+    "enquire.js": "^2.1.1",
+    "imagesloaded": "^4.1.1",
+    "skrollr": "^0.6.26"
+  }
+}

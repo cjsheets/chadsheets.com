@@ -1,0 +1,14 @@
+<div class="user-card">
+    <img class="user-card-avatar-image" src="/assets/img/avatar3.jpg">
+  <h1 class="user-card-name">{{site.data.about.name}}</h1>
+  <h2 class="user-card-title">{{site.data.about.title}}</h2>
+  <div class="user-card-bio-buttons">
+    <button class="user-card-bio-button js-show-bio">about me</button>
+  </div>
+  <div class="user-card-bio user-card-bio--hidden">
+    <div class="user-card-bio-content">
+      {{ site.data.about.bio | markdownify }}
+      <button class="user-card-back js-hide-bio">Back</button>
+    </div>
+  </div>
+</div>
