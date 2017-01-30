@@ -5,8 +5,6 @@ locale: en_US
 description: Chad Sheets (cjsheets) - Full Stack Developer | Portfolio
 logo: site-logo.png
 search: true
-url: http://localhost:4000
-
 # Jekyll configuration
 
 permalink:   /:categories/:title/
