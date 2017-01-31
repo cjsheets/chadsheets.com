@@ -7,7 +7,8 @@
 		        {% else %}
 		        {% assign domain = site.url %}
 		    {% endif %}
-		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+		    <li><a {% if link.url != '' %}href="{{ domain }}{{ link.url }}"{% endif %} {% if link.title contains 'About' %}id="about-toggle"{% endif %}
+					{% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
 		  {% endfor %}
 	    </ul>
 	</nav>
@@ -32,8 +33,20 @@
 	  <div class="card" data-20p="transform: scale(1); opacity: 1" data-100p="transform: scale(0.8); opacity: 0.8" data-110p="transform: scale(0); opacity: 0" style="transform: scale(1); display: flex;">
 		<div class="user-card-avatar">
     	<img class="user-card-avatar-image" src="/assets/img/avatar.png">
-		<p>About</p>
+		<p class="js-show-bio">About</p>
 		</div>
+  <div class="user-card-bio user-card-bio-hidden">
+    <div class="user-card-bio-content">
+			<p>I'm a Tacoma-based web developer who is passionate about software, technology,
+			linux and quality coffee.</p>
+			<p>I earned a degree in Electrical Engineering and lead teams around the world 
+				working in the Oil & Gas industry.</p>
+			<p>Send me a message using the form below if you'd like to chat. 
+				My favorite things include reactive programing, linux, automation, 
+				social justice and music.</p>
+    </div>
+      <a class="user-card-back js-hide-bio">Back</a>
+  </div>
 		<div class="user-info">
 	      <h1 class="site-title animated fadeIn"><a href="{{ site.url }}/">Chad Sheets</a></h1>
 		  <div style="width: 100%; border-top: 1px dashed #dddddd;"></div>

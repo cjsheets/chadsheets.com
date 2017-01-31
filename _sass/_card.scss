@@ -65,7 +65,7 @@
     position: absolute;
     bottom: -90px;
     left: 0px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #999999;
 
     & a{
@@ -78,4 +78,85 @@
   }
   .user-card-title {
     text-transform: uppercase;
+  }
+
+
+  .user-card-bio-buttons {
+    text-align: center;
+  }
+  .user-card-bio-button, .user-card-resumee-button {
+    color: black;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: none;
+    border: 0;
+    width: fit-content;
+    margin-top: 1em;
+    border-bottom: dotted 1px fade-out(black, 0.4);
+    transition: border .2s ease-out;
+    font-size: 0.8em;
+    padding: 0.1em;
+    line-height: 1em;
+    margin: 1em 0.5em 0 0.5em;
+    &:hover {
+      border-bottom-color: fade-out(black, 0.2);
+    }
+  }
+  .user-card-back {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: none;
+    border: 0;
+    border-bottom: dotted 1px fade-out(black, 0.4);
+    transition: border .2s ease-out;
+    font-size: 0.8em;
+    line-height: 1em;
+    &:hover {
+      border-bottom-color: fade-out(black, 0.2);
+    }
+  }
+
+  .user-card-bio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 1;
+    pointer-events: none;
+
+    &-hidden {
+      opacity: 0;
+      transition: opacity 0.8s ease-out 0.3s;
+    }
+
+    &-visible {
+      opacity: 1;
+      pointer-events: all;
+      transition: opacity 0.8s ease-out;
+    }
+  }
+  .user-card-bio-visible .user-card-bio-content {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 0.3s ease-out 0.3s, transform 0.3s ease-out 0.3s;
+  }
+  .user-card-bio-hidden .user-card-bio-content {
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: opacity 0.3s ease-out 0s, transform 0.3s ease-out 0s;
+  }
+  .user-card-bio-content {
+    padding: 1.5em;
+    text-align: left;
+  }
+  .user-card-bio-content p {
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-bottom: 16px;
   }

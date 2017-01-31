@@ -109,6 +109,15 @@ $grid.imagesLoaded().progress( function() {
     //     }
     //   }
     // });
+
+
+  $('.js-show-bio, #about-toggle').click(function(e) {
+    e.preventDefault();
+    $('.user-card-bio').addClass('user-card-bio-visible').removeClass('user-card-bio-hidden');
+  });
+  $('.js-hide-bio').click(function() {
+    $('.user-card-bio').removeClass('user-card-bio-visible').addClass('user-card-bio-hidden');
+  });
 });
 
 ( function( $ ) {

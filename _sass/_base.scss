@@ -101,6 +101,7 @@ ins {
 a {
 	text-decoration: none;
 	color: $link-color;
+    cursor: pointer;
 
 	&:visited {
 		color: lighten($link-color, 20);

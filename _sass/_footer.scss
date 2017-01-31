@@ -5,9 +5,9 @@
 .footer {
   @include clearfix;
   color: #EEEEEE;
-  margin: 4em auto 0;
+  margin: 4em auto 0px !important;
   text-align: center;
-  @include font-size(14);
+  @include font-size(14, no);
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.62);
   a {
     color: #EEEEEE;
