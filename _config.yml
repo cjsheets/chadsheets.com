@@ -16,6 +16,7 @@ sass:
 gems:
   - jekyll-sitemap
   - jekyll-feed
+url: https://chadsheets.com
 
 kramdown:
   input: GFM
