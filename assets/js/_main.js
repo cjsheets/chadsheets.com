@@ -26,41 +26,41 @@ $('#site-nav').click(function(event){
 });
 
 // FitVids options
-$(function() {
-	$("article").fitVids();
-});
+// $(function() {
+// 	$("article").fitVids();
+// });
 
 // Add lightbox class to all image links
-$("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
+//$("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
 
 // Magnific-Popup options
 $(document).ready(function() {
-  $('.image-popup').magnificPopup({
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-    },
-    image: {
-      tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
-    },
-    removalDelay: 300, // Delay in milliseconds before popup is removed
-    // Class that is added to body when popup is open. 
-    // make it unique to apply your CSS animations just to this exact popup
-    mainClass: 'mfp-fade'
-  });
+  // $('.image-popup').magnificPopup({
+  //   type: 'image',
+  //   tLoading: 'Loading image #%curr%...',
+  //   gallery: {
+  //     enabled: true,
+  //     navigateByImgClick: true,
+  //     preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+  //   },
+  //   image: {
+  //     tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
+  //   },
+  //   removalDelay: 300, // Delay in milliseconds before popup is removed
+  //   // Class that is added to body when popup is open. 
+  //   // make it unique to apply your CSS animations just to this exact popup
+  //   mainClass: 'mfp-fade'
+  // });
 
-var $grid = $('.grid').masonry({
-      "itemSelector": ".grid-item",
-      "columnWidth": 400,
-      fitWidth: true
-});
-// layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry('layout');
-});
+// var $grid = $('.grid').masonry({
+//       "itemSelector": ".grid-item",
+//       "columnWidth": 400,
+//       fitWidth: true
+// });
+// // layout Masonry after each image loads
+// $grid.imagesLoaded().progress( function() {
+//   $grid.masonry('layout');
+// });
 
 // var $container = $('#slide-2');
 // $container.imagesLoaded(function(){
@@ -73,13 +73,15 @@ $grid.imagesLoaded().progress( function() {
 
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top - 55
-          }, 1000);
-          return false;
+        var target = $(this.hash); 
+        if($(target).attr('id').substring(0,4) != 'tab-'){
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top - 55
+            }, 1000);
+            return false;
+          }
         }
       }
     });
@@ -195,8 +197,12 @@ $grid.imagesLoaded().progress( function() {
 	enquire.register("screen and (min-width : 480px)", initAdjustWindow(), false);
 
 
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: 200
-});
+// $('.grid').masonry({
+//   itemSelector: '.grid-item',
+//   columnWidth: 200
+// });
+
+
+ $('#myTabs').tabCollapse();
+  
 } )( jQuery );

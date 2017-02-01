@@ -311,7 +311,7 @@ background-color: #1e1e1e;
 -webkit-filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.5));
 filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.5));
 -moz-user-select: none;
-padding-bottom: 1em;
+padding-bottom: 0px;
 z-index: 3;
 color: #FFFFFF;
 }
@@ -541,4 +541,119 @@ color: #FFFFFF;
     img {
         max-width: 100% !important;
     }
+}
+
+// Carosel
+
+
+.container-projects {
+  background-color: #252526;
+}
+
+.badge {
+  background-color: #777;
+}
+
+.tabs-left { margin-top: 0px; }
+
+.lib-tabs {
+  float: left;
+  border-bottom: 0;
+  width: 100px;
+  text-align: right;
+    background-color: #252526;
+    border-right: 1px solid #111111;
+  
+
+
+  li {
+    float: none;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: #2d2d2d;
+    border-bottom: 1px solid #252526;
+    
+    a {
+      margin-right: 0;
+      border: 0;
+    padding: 8px 12px;
+    border-left: 1px solid #252526;
+    color: #909090;
+    border: 0px;
+    outline: 0;
+      
+      &:hover, &:focus {
+        background-color: #444;
+      }
+    }
+  }
+  
+  .glyphicon {
+    color: #fff;
+  }
+  
+  .active .glyphicon {
+    color: #FFFFFF;
+    background-color: #1e1e1e;
+    border: 0px;
+    outline: 0;
+  }
+}
+
+
+
+.lib-tabs>li.active>a, .lib-tabs>li.active>a:hover, .lib-tabs>li.active>a:focus {
+  border:0;
+    background-color: #1e1e1e;
+}
+
+li:first-child {
+    border-top: 1px solid #111111;
+}
+  li:last-child {
+    border-bottom: 1px solid #111111;
+}
+
+.lib-tab-content {
+  margin-left: 100px;
+  border-left: 1px solid #191919;
+  
+  .tab-pane {
+    display: none;
+    background-color: #1e1e1e;
+    padding: 1.6rem;
+  }
+  
+  .active { display: block; }
+}
+
+.list-group {
+  width: 100%;
+  
+  .list-group-item {
+    height: 50px;
+    
+    h4, span {
+      line-height: 11px;
+    }
+  }
+}
+
+
+
+/// Panes
+.tri-pane{
+    text-align: center;
+    padding: 50px 10%;
+
+} 
+.tri-pane-left{
+    background-color: #557777;
+}
+.tri-pane-center{
+    background-color: #99bbaa;
+}
+.tri-pane-right{
+    background-color: #889977;
 }
