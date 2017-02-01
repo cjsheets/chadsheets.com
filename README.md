@@ -63,6 +63,8 @@ This package contains:
 
 ### To-Do:
 
+* load images dynamically
+* Resolve _config url changing
 * Fix mobile view
 * Add carousel for projects
 * Bottom margin visible in firefox
