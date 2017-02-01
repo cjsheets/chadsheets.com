@@ -650,6 +650,8 @@ li:first-child {
     position: absolute; 
     top: 10px;
     width: 100%;
+    min-height: 200px;
+    min-width: 200px;
 }
 .project-image img{
     max-height: 220px;
@@ -662,6 +664,19 @@ li:first-child {
     font-weight: 300;
 }
 
+.sprite-logo{
+  background: url(/assets/img/sprite-logos-compressed.png);
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+
+  &-angular{
+    background-position: -400px -400px;
+  }
+}
+.sprite-logo-angular{
+
+}
 
 /// Panes
 .tri-pane{
