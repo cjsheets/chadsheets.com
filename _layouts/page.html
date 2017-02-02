@@ -34,158 +34,49 @@
     <div class="col-12">
       <div class="tabs-left">
         <ul class="nav lib-tabs">
-          <li class="active"><a href="#tab-angular" data-toggle="tab"> Angular </a></li>
-          <li><a href="#tab-react" data-toggle="tab"> React </a></li>
-          <li><a href="#tab-d3" data-toggle="tab"> D3 </a></li>
-          <li><a href="#tab-rxjs" data-toggle="tab"> RxJS </a></li>
-          <li><a href="#tab-jquery" data-toggle="tab"> jQuery </a></li>
-          <li><a href="#tab-jquery" data-toggle="tab"> Node </a></li>
-          <li><a href="#tab-jquery" data-toggle="tab"> Mongo </a></li>
-          <li><a href="#tab-jquery" data-toggle="tab"> RTDB </a></li>
-          <li><a href="#tab-jquery" data-toggle="tab"> Ansible </a></li>
-          <li><a href="#tab-jquery" data-toggle="tab"> Shell </a></li>
+          {% for category in site.data.project-categories %}
+            {% if category.id == 'angular' %}
+              <li class="active">
+              {% else %}
+              <li>
+            {% endif %}
+            <a href="#tab-{{ category.id }}" data-toggle="tab">{{ category.name }}</a></li>
+          {% endfor %}
         </ul>
         <div class="lib-tab-content">
-          <div class="tab-pane active" id="tab-angular">
-<div class="container-flex">
-  <div class="row project-cells">
+        {% assign bypassFirstLoop = true %}
+        {% for category in site.data.project-categories %}
+          {% if bypassFirstLoop == true %}
+            <div class="tab-pane active" id="tab-{{ category.id }}">
+          {% else %}
+            <div class="tab-pane" id="tab-{{ category.id }}">
+          {% endif %}
+            <div class="container-flex">
+              <div class="row project-cells">
+  {% for project in site.data.projects %}
     <div class="col-md-4 col-sm-6">
       <div class="project-image">
-      <img class="" src="/assets/img/project-screenshot-ava.jpg">
+      <img class="" src="/assets/img/{{ project.id }}-project-screenshots.png">
       </div><div class="project-description">
-        Angular Voting App
+        {{ category.description }}
       </div>
     </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <span class="sprite-logo sprite-logo-angular"></span>
-      </div><div class="project-description">
+    {% if bypassFirstLoop == true %}
+      <div class="col-md-4 col-sm-6">
+        <div class="project-image">
+        <span class="sprite-logo sprite-logo-{{ category.id }}"></span>
+        </div><div class="project-description">
+        </div>
       </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-aca.jpg">
-      </div><div class="project-description">
-        Angular Stocks App
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-ata.jpg">
-      </div><div class="project-description">
-        Angular Trading App
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-apa.jpg">
-      </div><div class="project-description">
-        Angular Pinterest App
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-ana.jpg">
-      </div><div class="project-description">
-        Angular Nightlife App
-      </div>
-    </div>
-  </div>
-</div>
-          </div><div class="tab-pane" id="tab-react">
-  <div class="row project-cells">
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-ava.jpg">
-      </div><div class="project-description">
-        Angular Voting App
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <span class="sprite-logo sprite-logo-react"></span>
-      </div><div class="project-description">
-        Angular 2
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-aca.jpg">
-      </div><div class="project-description">
-        Angular Stocks App
-      </div>
-    </div>
-          </div><div class="tab-pane" id="tab-d3">
-  <div class="row project-cells">
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-ava.jpg">
-      </div><div class="project-description">
-        Angular Voting App
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <span class="sprite-logo sprite-logo-d3"></span>
-      </div><div class="project-description">
-        Angular 2
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-aca.jpg">
-      </div><div class="project-description">
-        Angular Stocks App
-      </div>
-    </div>
-          </div><div class="tab-pane" id="tab-rxjs">
-  <div class="row project-cells">
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-ava.jpg">
-      </div><div class="project-description">
-        Angular Voting App
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <span class="sprite-logo sprite-logo-rxjs"></span>
-      </div><div class="project-description">
-        Angular 2
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-aca.jpg">
-      </div><div class="project-description">
-        Angular Stocks App
-      </div>
-    </div>
-          </div><div class="tab-pane" id="tab-jquery">
-  <div class="row project-cells">
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-ava.jpg">
-      </div><div class="project-description">
-        Angular Voting App
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <span class="sprite-logo sprite-logo-jquery"></span>
-      </div><div class="project-description">
-        Angular 2
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img src="/assets/img/project-screenshot-aca.jpg">
-      </div><div class="project-description">
-        Angular Stocks App
-      </div>
-    </div>
+    {% endif %}
+    {% assign bypassFirstLoop = false %}
+  {% endfor %}
+              </div>
+            </div>
           </div>
-        </div><!-- /lib-tab-content -->
+        {% endfor %}
+      </div><!-- /lib-tab-content -->
+
       </div><!-- /tabbable -->
     </div><!-- /col -->
   </div><!-- /row -->

@@ -1,0 +1,9 @@
+- name: 'Angular Voting App'
+  categories: ['angular', 'rtdb', 'rxjs']
+  description: 'Angular Voting App'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  image: '/assets/img/fullstack-projects-compressed.png'
+  x-y: '0px 0px'
+
+

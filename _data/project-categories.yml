@@ -1,0 +1,33 @@
+- id: 'angular'
+  name: 'Angular'
+
+- id: 'react'
+  name: 'React'
+
+- id: 'd3'
+  name: 'D3'
+  
+- id: 'rxjs'
+  name: 'RxJS'
+  
+- id: 'jquery'
+  name: 'jQuery'
+  
+- id: 'node'
+  name: 'Node'
+  
+- id: 'mongo'
+  name: 'Mongo'
+  
+- id: 'rtdb'
+  name: 'RTDB'
+  
+- id: 'ansible'
+  name: 'Ansible'
+  
+- id: 'shell'
+  name: 'Shell'
+  
+
+
+
