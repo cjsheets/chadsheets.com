@@ -54,22 +54,26 @@
             <div class="container-flex">
               <div class="row project-cells">
   {% for project in site.data.projects %}
-    <div class="col-md-4 col-sm-6">
-      <div class="project-image">
-      <img class="" src="/assets/img/{{ project.id }}-project-screenshots.png">
-      </div><div class="project-description">
-        {{ category.description }}
-      </div>
-    </div>
-    {% if bypassFirstLoop == true %}
-      <div class="col-md-4 col-sm-6">
-        <div class="project-image">
-        <span class="sprite-logo sprite-logo-{{ category.id }}"></span>
-        </div><div class="project-description">
+    {% for projectCategory in project.categories %}
+      {% if projectCategory == category.id %}
+        <div class="col-md-4 col-sm-6">
+          <div class="project-image">
+            <span class="{{ project.img }} {{ project.img }}-{{ project.id }}"></span>
+          </div><div class="project-description">
+            {{ project.description }}
+          </div>
         </div>
-      </div>
-    {% endif %}
-    {% assign bypassFirstLoop = false %}
+        {% if bypassFirstLoop == true %}
+          <div class="col-md-4 col-sm-6">
+            <div class="project-image">
+            <span class="sprite-logo sprite-logo-{{ category.id }}"></span>
+            </div><div class="project-description">
+            </div>
+          </div>
+        {% endif %}
+        {% assign bypassFirstLoop = false %}
+      {% endif %}
+    {% endfor %}
   {% endfor %}
               </div>
             </div>

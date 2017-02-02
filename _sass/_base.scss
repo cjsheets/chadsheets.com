@@ -674,8 +674,27 @@ li:first-child {
     background-position: -400px -400px;
   }
 }
-.sprite-logo-angular{
+.sprite-project-angular{
+  background: url(/assets/img/sprite-projects-angular-compressed.png);
+  display: inline-block;
+  height: 200px;
+  width: 300px;
 
+  &-aca{
+    background-position: 0px 0px;
+  }
+  &-ana{
+    background-position: -300px 0px;
+  }
+  &-apa{
+    background-position: -600px 0px;
+  }
+  &-ata{
+    background-position: 0px -200px;
+  }
+  &-ava{
+    background-position: -300px -200px;
+  }
 }
 
 /// Panes

@@ -1,9 +1,36 @@
-- name: 'Angular Voting App'
+- id: 'aca'
+  categories: ['angular', 'rtdb', 'rxjs']
+  description: 'Angular Stocks App'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ava'
   categories: ['angular', 'rtdb', 'rxjs']
   description: 'Angular Voting App'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
-  image: '/assets/img/fullstack-projects-compressed.png'
-  x-y: '0px 0px'
+  img: 'sprite-project-angular'
+
+- id: 'ana'
+  categories: ['angular', 'rtdb', 'rxjs']
+  description: 'Angular Nightlife App'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'apa'
+  categories: ['angular', 'rtdb', 'rxjs']
+  description: 'Angular Pinterest App'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['angular', 'rtdb', 'rxjs']
+  description: 'Angular Trading App'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
 
 
