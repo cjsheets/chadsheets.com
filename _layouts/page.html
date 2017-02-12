@@ -44,9 +44,10 @@
           {% endfor %}
         </ul>
         <div class="lib-tab-content">
-        {% assign bypassFirstLoop = true %}
+        {% assign displayFirstTabGroup = true %}
         {% for category in site.data.project-categories %}
-          {% if bypassFirstLoop == true %}
+          {% assign displayTabGroupLogo = true %}
+          {% if displayFirstTabGroup == true %}
             <div class="tab-pane active" id="tab-{{ category.id }}">
           {% else %}
             <div class="tab-pane" id="tab-{{ category.id }}">
@@ -63,7 +64,7 @@
             {{ project.description }}
           </div>
         </div>
-        {% if bypassFirstLoop == true %}
+        {% if displayTabGroupLogo == true %}
           <div class="col-md-4 col-sm-6">
             <div class="project-image">
             <span class="sprite-logo sprite-logo-{{ category.id }}"></span>
@@ -71,7 +72,8 @@
             </div>
           </div>
         {% endif %}
-        {% assign bypassFirstLoop = false %}
+        {% assign displayFirstTabGroup = false %}
+        {% assign displayTabGroupLogo = false %}
       {% endif %}
     {% endfor %}
   {% endfor %}

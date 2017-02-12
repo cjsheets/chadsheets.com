@@ -670,6 +670,38 @@ li:first-child {
   height: 200px;
   width: 200px;
 
+  &-rxjs{
+    background-position: 0px -0px;
+  }
+
+  &-react{
+    background-position: -200px 0px;
+  }
+
+  &-node{
+    background-position: -400px 0px;
+  }
+
+  &-mongo{
+    background-position: 0px -200px;
+  }
+
+  &-jquery{
+    background-position: -200px -200px;
+  }
+
+  &-rtdb{
+    background-position: -400px -200px;
+  }
+
+  &-ansible{
+    background-position: 0px -400px;
+  }
+
+  &-d3{
+    background-position: -200px -400px;
+  }
+
   &-angular{
     background-position: -400px -400px;
   }

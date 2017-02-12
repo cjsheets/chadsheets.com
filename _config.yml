@@ -16,8 +16,8 @@ sass:
 gems:
   - jekyll-sitemap
   - jekyll-feed
-url: https://chadsheets.com
-#url: http://localhost:4000
+#url: https://chadsheets.com
+url: http://localhost:4000
 
 kramdown:
   input: GFM

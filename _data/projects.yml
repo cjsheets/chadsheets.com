@@ -1,36 +1,240 @@
 - id: 'aca'
-  categories: ['angular', 'rtdb', 'rxjs']
+  categories: ['angular', 'rxjs', 'node']
   description: 'Angular Stocks App'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
   img: 'sprite-project-angular'
 
 - id: 'ava'
-  categories: ['angular', 'rtdb', 'rxjs']
+  categories: ['angular', 'rxjs']
   description: 'Angular Voting App'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
   img: 'sprite-project-angular'
 
 - id: 'ana'
-  categories: ['angular', 'rtdb', 'rxjs']
+  categories: ['angular', 'rxjs', 'node', 'mongo']
   description: 'Angular Nightlife App'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
   img: 'sprite-project-angular'
 
 - id: 'apa'
-  categories: ['angular', 'rtdb', 'rxjs']
+  categories: ['angular', 'rxjs']
   description: 'Angular Pinterest App'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
   img: 'sprite-project-angular'
 
 - id: 'ata'
-  categories: ['angular', 'rtdb', 'rxjs']
+  categories: ['angular', 'rxjs', 'mongo']
   description: 'Angular Trading App'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
   img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['react']
+  description: 'Dungeon Crawler'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['react']
+  description: 'FCC Leaderboard'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['react']
+  description: 'Game of Life'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['react']
+  description: 'Markdown Viewer'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['react']
+  description: 'Recipe Box'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['d3']
+  description: 'Bar Chart'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['d3']
+  description: 'Data Map'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['d3']
+  description: 'Force Graph'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['d3']
+  description: 'Heat Map'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['d3']
+  description: 'Scatterplot'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['jquery']
+  description: 'Calculator'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['jquery']
+  description: 'Twitch Viewer'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['jquery']
+  description: 'Pomodoro Clock'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['jquery']
+  description: 'Simon'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['jquery']
+  description: 'Tic Tac Toe'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['node', 'mongo']
+  description: 'URL Shortener'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['node', 'mongo']
+  description: 'Image Search API'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['node', 'mongo']
+  description: 'File Metadata'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'aca'
+  categories: ['rtdb']
+  description: 'Angular Stocks - SocketsIO'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ava'
+  categories: ['rtdb']
+  description: 'Angular Voting - Firebase'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'apa'
+  categories: ['rtdb']
+  description: 'Angular Pinterest - Firebase'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['rtdb']
+  description: 'Angular Trading - Meteor'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['python']
+  description: 'AirVPN Utilities'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['ansible']
+  description: 'Ansible Cron'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'aca'
+  categories: ['ansible']
+  description: 'Ansible SnapRaid'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ava'
+  categories: ['ansible']
+  description: 'Ansible Users'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'apa'
+  categories: ['ansible']
+  description: 'Ansible Ansible'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'apa'
+  categories: ['shell']
+  description: 'Snapraid Utilities'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'ata'
+  categories: ['shell']
+  description: 'Rotate Wallpapers'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
 
 
