@@ -69,9 +69,6 @@ This package contains:
 * Add carousel for projects
 * Bottom margin visible in firefox
 * Remove unused classes and libs
-  * magnific-popup
-  * Burbon / grid / neat
-  * /js/(plugins/vendors)
 
 ### License
 

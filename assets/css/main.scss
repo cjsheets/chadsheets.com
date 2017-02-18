@@ -21,8 +21,7 @@ sitemap: false
 @import "grid-settings"; /* Bourbon Neat settings */
 @import "vendor/neat/neat"; /* Bourbon Neat grid mixins (neat.bourbon.io) */
 @import "vendor/font-awesome/font-awesome"; /* Font Awesome icons */
-@import "vendor/magnific-popup/magnific-popup"; /* Magnific Popup lightbox */
-@import "bootstrap.css"; /* Magnific Popup lightbox */
+@import "bootstrap.css";
 
 /*
    Global
@@ -40,19 +39,12 @@ sitemap: false
 @import "buttons";
 @import "card";
 @import "contact";
-@import "wells";
 @import "syntax";
 @import "forms";
-@import "notices"; /* notices and alerts */
+@import "notices";
 @import "animations";
 @import "masthead";
 @import "navigation";
-@import "search";
+@import "paralax";
+@import "projects";
 @import "footer";
-
-/*
-   Page specific
-   ========================================================================== */
-
-@import "page"; /* layout and styles that apply to posts and pages */
-@import "archives"; /* archive pages (post/tag lists, etc) */
