@@ -1,0 +1,202 @@
+
+// Carosel
+
+
+.container-projects {
+  background-color: #252526;
+}
+
+.badge {
+  background-color: #777;
+}
+
+.tabs-left { margin-top: 0px; }
+
+.lib-tabs {
+  float: left;
+  border-bottom: 0;
+  width: 100px;
+  text-align: right;
+    background-color: #252526;
+    border-right: 1px solid #111111;
+  
+
+
+  li {
+    float: none;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: #2d2d2d;
+    border-bottom: 1px solid #252526;
+    
+    a {
+      margin-right: 0;
+      border: 0;
+    padding: 8px 12px;
+    border-left: 1px solid #252526;
+    color: #909090;
+    border: 0px;
+    outline: 0;
+      
+      &:hover, &:focus {
+        background-color: #444;
+      }
+    }
+  }
+  
+  .glyphicon {
+    color: #fff;
+  }
+  
+  .active .glyphicon {
+    color: #FFFFFF;
+    background-color: #1e1e1e;
+    border: 0px;
+    outline: 0;
+  }
+}
+
+
+
+.lib-tabs>li.active>a, .lib-tabs>li.active>a:hover, .lib-tabs>li.active>a:focus {
+  border:0;
+    background-color: #1e1e1e;
+}
+
+li:first-child {
+    border-top: 1px solid #111111;
+}
+  li:last-child {
+    border-bottom: 1px solid #111111;
+}
+
+.lib-tab-content {
+  margin-left: 100px;
+  border-left: 1px solid #191919;
+  
+  .tab-pane {
+    display: none;
+    background-color: #1e1e1e;
+    padding: 1.6rem;
+  }
+  
+  .active { display: block; }
+}
+
+.list-group {
+  width: 100%;
+  
+  .list-group-item {
+    height: 50px;
+    
+    h4, span {
+      line-height: 11px;
+    }
+  }
+}
+
+////  Project Cells
+
+.project-cells > div{
+    height: 280px;
+    text-align: center;
+}
+.project-image{
+    position: absolute; 
+    top: 10px;
+    width: 100%;
+    min-height: 200px;
+    min-width: 200px;
+}
+.project-image img{
+    max-height: 220px;
+}
+.project-description{
+    position: absolute; 
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+}
+
+.sprite-logo{
+  background: url(/assets/img/sprite-logos-compressed.png);
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+
+  &-rxjs{
+    background-position: 0px -0px;
+  }
+
+  &-react{
+    background-position: -200px 0px;
+  }
+
+  &-node{
+    background-position: -400px 0px;
+  }
+
+  &-mongo{
+    background-position: 0px -200px;
+  }
+
+  &-jquery{
+    background-position: -200px -200px;
+  }
+
+  &-rtdb{
+    background-position: -400px -200px;
+  }
+
+  &-ansible{
+    background-position: 0px -400px;
+  }
+
+  &-d3{
+    background-position: -200px -400px;
+  }
+
+  &-angular{
+    background-position: -400px -400px;
+  }
+}
+.sprite-project-angular{
+  background: url(/assets/img/sprite-projects-angular-compressed.png);
+  display: inline-block;
+  height: 200px;
+  width: 300px;
+
+  &-aca{
+    background-position: 0px 0px;
+  }
+  &-ana{
+    background-position: -300px 0px;
+  }
+  &-apa{
+    background-position: -600px 0px;
+  }
+  &-ata{
+    background-position: 0px -200px;
+  }
+  &-ava{
+    background-position: -300px -200px;
+  }
+}
+
+/// Panes
+.tri-pane{
+    text-align: center;
+    padding: 50px 10%;
+
+} 
+.tri-pane-left{
+    background-color: #557777;
+}
+.tri-pane-center{
+    background-color: #99bbaa;
+}
+.tri-pane-right{
+    background-color: #889977;
+}
