@@ -20,7 +20,7 @@
   position: fixed;
   left: calc(50vw - 230px);
   top: calc(50vh - 150px);
-    z-index: 1;
+  z-index: -1;
   }
 
   .user-card-avatar {
@@ -76,10 +76,10 @@
       color: #cccccc;
     }
   }
+  
   .user-card-title {
     text-transform: uppercase;
   }
-
 
   .user-card-bio-buttons {
     text-align: center;
@@ -159,4 +159,36 @@
     font-weight: 300;
     font-size: 0.9em;
     margin-bottom: 16px;
+  }
+
+  @media (max-width: 37.5em) {
+    .user-card {
+      width: 100%;
+      }
+    .user-card-wrapper {
+      width: 80%;
+      left: calc(9vw);
+      }
+    .user-info {
+      width: 100%;
+    }
+    .user-links {
+      position: absolute;
+      bottom: -140px;
+    }
+    .user-card-avatar {
+      width: 100%;
+      text-align: center;
+      height: 155px;
+      &-image {
+        display: none;
+      }
+    }
+    .user-card-avatar p {
+      position: relative;
+      top: auto;
+      left: auto;
+      bottom: -120px;
+      display:inline-block;
+    }
   }

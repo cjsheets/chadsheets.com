@@ -12,64 +12,14 @@
 		  {% endfor %}
 	    </ul>
 	</nav>
-</div><!-- /.navigation-wrapper -->
+</div>
 
 {% include browser-upgrade.html %}
 
-
-
-{% if page.image.feature %}<header class="masthead">
-	{% if site.logo != null %}
-		<div class="wrap">
-			<a href="{{ site.url }}/" class="site-logo" rel="home" title="{{ site.title }}"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo" class="animated fadeInDown"></a>
-		</div>
-	{% endif %}
-</header><!-- /.masthead -->
-{% else %}<header class="masthead">
+<header class="masthead">
 	<div class="wrap">
-      {% if site.logo != null %}
-  		<!--<a href="{{ site.url }}/" class="site-logo" rel="home" title="{{ site.title }}"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo" class="animated fadeInDown"></a>-->
-      {% endif %}
-	  <div class="user-card-wrapper" data-20p="transform: scale(1); opacity: 1" data-100p="transform: scale(0.8); opacity: 0.8" data-110p="transform: scale(0); opacity: 0" style="transform: scale(1); display: flex;">
-		<div class="user-card-avatar">
-    	<img class="user-card-avatar-image" src="/assets/img/avatar.png">
-		<p class="js-show-bio">About</p>
-		</div>
-  <div class="user-card-bio user-card-bio-hidden">
-    <div class="user-card-bio-content">
-			<p>I'm a Tacoma-based web developer who is passionate about software, technology,
-			linux and quality coffee.</p>
-			<p>I earned a degree in Electrical Engineering and lead teams around the world 
-				working in the Oil & Gas industry.</p>
-			<p>Send me a message using the form below if you'd like to chat. 
-				My favorite things include reactive programing, linux, automation, 
-				social justice and music.</p>
-    </div>
-      <a class="user-card-back js-hide-bio">Back</a>
-  </div>
-		<div class="user-info">
-	      <h1 class="site-title animated fadeIn"><a href="{{ site.url }}/">Chad Sheets</a></h1>
-		  <div style="width: 100%; border-top: 1px dashed #dddddd;"></div>
-		<h2 class="site-description animated fadeIn" itemprop="description">Full-Stack Developer</h2>
-		<p style="color: #999999; font-size: 1.8em;" class="user-links">
-			<a href="https://www.facebook.com/chad.sheets" target="_blank">
-				<i class="fa fa-facebook-square fa-2" aria-hidden="true" style="padding: 0px 10px;"></i></a>
-			<a href="https://github.com/cjsheets" target="_blank">
-			<i class="fa fa-github-square fa-2" aria-hidden="true" style="padding: 0px 10px;"></i></a>
-			<a href="https://www.linkedin.com/in/chadsheets/" target="_blank">
-			<i class="fa fa-linkedin-square fa-2" aria-hidden="true" style="padding: 0px 10px;"></i></a>
-			<a href="https://plus.google.com/u/0/+ChadSheets" target="_blank">
-			<i class="fa fa-google-plus-square fa-2" aria-hidden="true" style="padding: 0px 10px;"></i></a>
-		</p>
-		<div class="clearfix"></div>
-		</div>
-		<!--<div class="user-links">
-			<span style="float: left; padding-left: 30px;">About Me</span>
-			<span style="float: right; padding-right: 40px;">Résumé</span>
-		</div>-->
-	  </div>
-	  
+		{% include card.html %}
 	</div>
-</header><!-- /.masthead -->{% endif %}
+</header>
 
 <div class="js-menu-screen menu-screen"></div>
