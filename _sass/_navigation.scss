@@ -14,7 +14,7 @@
     padding: 0px 25px;
     background-color: $black;
 
-    @include media($medium) {
+    @include media($small) {
       width: auto;
       @include rounded(0 0 30px 30px);
     }
@@ -31,7 +31,7 @@
     text-transform: uppercase;
     color: $white;
 
-    @include media($medium) {
+    @include media($small) {
       @include font-size(14,no);
     }
 
@@ -45,7 +45,7 @@
     margin-bottom: 10px;
     padding: 4px 25px;
 
-    @include media($medium) {
+    @include media($small) {
       margin-bottom: 0;
       padding: 4px 10px;
     }
@@ -67,7 +67,7 @@
   display: none;
   z-index: 5;
 
-  @include media($medium) {
+  @include media($small) {
     -webkit-animation-duration: 2s;
     -moz-animation-duration: 2s;
     -o-animation-duration: 2s;
@@ -76,7 +76,7 @@
 
   &.closed {
 
-    @include media($medium) {
+    @include media($small) {
       display: block;
     }
   }
@@ -88,7 +88,7 @@
     li {
       float: none;
 
-      @include media($medium) {
+      @include media($small) {
         float: left;
       }
     }
@@ -101,16 +101,17 @@
 }
 
 #nav-toggle {
-  z-index: 20;
-  display: block;
-  vertical-align: top;
-  margin: 0;
-  padding: 6px 20px;
-  background-color: $black;
-  height: 44px;
-  @include rounded(0);
+  display: none;
+  // z-index: 20;
+  // display: block;
+  // vertical-align: top;
+  // margin: 0;
+  // padding: 6px 20px;
+  // background-color: $black;
+  // height: 44px;
+  // @include rounded(0);
 
-  @include media($medium) {
-    display: none;
-  }
+  // @include media($small) {
+  //   display: none;
+  // }
 }
