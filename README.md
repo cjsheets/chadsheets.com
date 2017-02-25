@@ -42,8 +42,6 @@ bundle exec jekyll serve
 
 Navigate to `http://localhost:4000`
 
-
-
 ## Technology Stack
 
 This package contains:
