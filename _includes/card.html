@@ -1,14 +1,37 @@
-<div class="user-card">
-    <img class="user-card-avatar-image" src="/assets/img/avatar3.jpg">
-  <h1 class="user-card-name">{{site.data.about.name}}</h1>
-  <h2 class="user-card-title">{{site.data.about.title}}</h2>
-  <div class="user-card-bio-buttons">
-    <button class="user-card-bio-button js-show-bio">about me</button>
-  </div>
-  <div class="user-card-bio user-card-bio--hidden">
-    <div class="user-card-bio-content">
-      {{ site.data.about.bio | markdownify }}
-      <button class="user-card-back js-hide-bio">Back</button>
+<div class="user-card-wrapper" style="transform: scale(1);"
+  data-20p="transform: scale(1); opacity: 1" 
+  data-100p="transform: scale(0.8); opacity: 0.8" 
+  data-110p="transform: scale(0); opacity: 0">
+  <div class="user-card-avatar">
+    <img class="user-card-avatar-image" src="/assets/img/avatar.png">
+    <p class="js-show-bio">About</p>
     </div>
+    <div class="user-card-bio user-card-bio-hidden">
+    <div class="user-card-bio-content">
+      <p>I'm a Tacoma-based web developer who is passionate about software, technology,
+      linux and quality coffee.</p>
+      <p>I earned a degree in Electrical Engineering and lead teams around the world 
+        working in the Oil & Gas industry.</p>
+      <p>Send me a message using the form below if you'd like to chat. 
+        My favorite things include reactive programing, linux, automation, 
+        social justice and music.</p>
+    </div>
+      <a class="user-card-back js-hide-bio">Back</a>
+    </div>
+    <div class="user-info">
+      <h1 class="site-title animated fadeIn"><a href="{{ site.url }}/">Chad Sheets</a></h1>
+      <div style="width: 100%; border-top: 1px dashed #dddddd;"></div>
+      <h2 class="site-description animated fadeIn" itemprop="description">Full-Stack Developer</h2>
+      <p style="color: #999999; font-size: 1.8em;" class="user-links">
+        <a href="https://www.facebook.com/chad.sheets" target="_blank">
+        <i class="fa fa-facebook-square fa-2" aria-hidden="true" style="padding: 0px 10px;"></i></a>
+        <a href="https://github.com/cjsheets" target="_blank">
+        <i class="fa fa-github-square fa-2" aria-hidden="true" style="padding: 0px 10px;"></i></a>
+        <a href="https://www.linkedin.com/in/chadsheets/" target="_blank">
+        <i class="fa fa-linkedin-square fa-2" aria-hidden="true" style="padding: 0px 10px;"></i></a>
+        <a href="https://plus.google.com/u/0/+ChadSheets" target="_blank">
+        <i class="fa fa-google-plus-square fa-2" aria-hidden="true" style="padding: 0px 10px;"></i></a>
+      </p>
+    <div class="clearfix"></div>
   </div>
-</div>`
+</div>
