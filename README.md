@@ -8,7 +8,6 @@ The site provides my updated [resume](assets/doc/ChadSheets-Resume-Extended.pdf)
 I've worked on and my contact information. I occasionally post here: [blog.chadsheets.com](https://blog.chadsheets.com)
 as well.
 
-
 ## Install
 
 First ensure Jekyll and bundler are installed:
