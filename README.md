@@ -53,7 +53,6 @@ This package contains:
 | HTML5/SCSS | Formspree |
 | Grunt | |
  
-
 ### Credit
 
 * Loosely based on [mmistakes/so-simple-theme](https://github.com/mmistakes/so-simple-theme)
