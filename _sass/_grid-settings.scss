@@ -1,10 +1,24 @@
-@import "vendor/neat/neat-helpers";
+$column: 3em !default; // Column width
+$gutter: 1em !default; // Gutter between each two columns
+$grid-columns: 12 !default; // Total number of columns in the grid
+$max-width: 1088 !default; // Max-width of the outer container
+$border-box-sizing: true !default; // Makes all elements have a border-box layout
+$default-feature: min-width; // Default @media feature for the breakpoint() mixin
+$default-layout-direction: LTR !default;
+
+
+$visual-grid: false !default; // Display the base grid
+$visual-grid-color: #EEE !default;
+$visual-grid-index: back !default; // Show grid behind content (back) or overlay it over the content (front)
+$visual-grid-opacity: 0.4 !default;
+$visual-grid-breakpoints: () !default;
+
 
 // Change the grid settings
 $visual_grid: false;
-$max-width: em(960);
+$max-width: 960;
 
 // Define your breakpoints
-$small: new-breakpoint(min-width em(600) 12);
-$medium: new-breakpoint(min-width em(768) 12);
-$large: new-breakpoint(min-width em(1000) 12);
+$small: new-breakpoint(min-width 600 12);
+$medium: new-breakpoint(min-width 768 12);
+$large: new-breakpoint(min-width 1000 12);
