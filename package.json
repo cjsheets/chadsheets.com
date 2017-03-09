@@ -17,6 +17,7 @@
     "bootstrap": "^3.3.7",
     "enquire.js": "^2.1.1",
     "imagesloaded": "^4.1.1",
+    "jquery": "^3.1.1",
     "masonry-layout": "^4.1.1",
     "skrollr": "^0.6.26"
   }
