@@ -8,6 +8,10 @@
 
 .project-grid {
   &-item {
+    overflow: hidden;
+    opacity: 0.5;
+    transition:all 0.3s ease;
+    
     @media (max-width: 400px) {
       width: 100%;
     }
@@ -24,6 +28,28 @@
       width: 20%;
     }
   }
+
+  &-item:hover {
+     opacity: 1;
+  }
+}
+
+
+.popup-title {
+  position:absolute;
+  top:100%;
+  width:100%;
+  transition: transform 250ms;
+  vertical-align: bottom;
+}
+.popup-title span {
+  display:block;
+  margin:0;
+  background-color: black;
+}
+
+.project-grid-item:hover .popup-title {
+  transform:translateY(-100%);
 }
 
 .project-image {
