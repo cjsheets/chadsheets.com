@@ -28,3 +28,54 @@
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
 
+- id: 'd3-heat'
+  categories: ['angular', 'rxjs', 'mongo']
+  description: 'Angular Trading App'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+
+- id: 'd3-map'
+  categories: ['d3']
+  description: 'Angular Trading App'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+
+- id: 'd3-scatter'
+  categories: ['d3']
+  description: 'Angular Trading App'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+
+- id: 'react-gol'
+  categories: ['d3']
+  description: 'Angular Trading App'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+
+- id: 'node-image'
+  categories: ['d3']
+  description: 'Angular Trading App'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+
+- id: 'ansible-linconf'
+  categories: ['ansible']
+  description: 'Ansible Ansible'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'bash-su'
+  categories: ['shell']
+  description: 'Snapraid Utilities'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
+- id: 'bash-rw'
+  categories: ['shell']
+  description: 'Rotate Wallpapers'
+  url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
+  git: 'angular-voting-app'
+  img: 'sprite-project-angular'
+
