@@ -38,6 +38,13 @@ $(document).ready(function() {
   $('.js-hide-bio').click(function() {
     $('.user-card-bio').removeClass('user-card-bio-visible').addClass('user-card-bio-hidden');
   });
+
+
+  $('.project-grid').masonry({
+    itemSelector: '.project-grid-item',
+    columnWidth: '.project-grid-item',
+    percentPosition: true
+  });
 });
 
 ( function( $ ) {

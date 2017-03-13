@@ -31,59 +31,17 @@
 
 <div class="container-flex container-projects">
   <div class="row">
-    <div class="col-12">
-      <div class="tabs-left">
-        <ul class="nav lib-tabs">
-          {% for category in site.data.project-categories %}
-            {% if category.id == 'angular' %}
-              <li class="active">
-              {% else %}
-              <li>
-            {% endif %}
-            <a href="#tab-{{ category.id }}" data-toggle="tab">{{ category.name }}</a></li>
-          {% endfor %}
-        </ul>
-        <div class="lib-tab-content">
-        {% assign displayFirstTabGroup = true %}
-        {% for category in site.data.project-categories %}
-          {% assign displayTabGroupLogo = true %}
-          {% if displayFirstTabGroup == true %}
-            <div class="tab-pane active" id="tab-{{ category.id }}">
-          {% else %}
-            <div class="tab-pane" id="tab-{{ category.id }}">
-          {% endif %}
-            <div class="container-flex">
-              <div class="row project-cells">
-  {% for project in site.data.projects %}
-    {% for projectCategory in project.categories %}
-      {% if projectCategory == category.id %}
-        <div class="col-md-4 col-sm-6">
-          <div class="project-image">
-            <span class="{{ project.img }} {{ project.img }}-{{ project.id }}"></span>
-          </div><div class="project-description">
-            {{ project.description }}
+    <div class="col-12 project-grid">
+      {% for project in site.data.projects %}
+      <div class="project-grid-item">
+        <div class="project-image">
+          <img src="/assets/img/project-screenshot-{{ project.id }}.jpg">
+          <div class="popup-title">
+            <span>{{ project.git }}</span>
           </div>
         </div>
-        {% if displayTabGroupLogo == true %}
-          <div class="col-md-4 col-sm-6">
-            <div class="project-image">
-            <span class="sprite-logo sprite-logo-{{ category.id }}"></span>
-            </div><div class="project-description">
-            </div>
-          </div>
-        {% endif %}
-        {% assign displayFirstTabGroup = false %}
-        {% assign displayTabGroupLogo = false %}
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-      </div><!-- /lib-tab-content -->
-
-      </div><!-- /tabbable -->
+      </div>
+      {% endfor %}
     </div><!-- /col -->
   </div><!-- /row -->
   <div class="row">
