@@ -1,66 +1,66 @@
 - id: 'aca'
   categories: ['angular', 'rxjs', 'node']
-  description: 'Angular Stocks App'
+  description: 'Angular Stocks'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
 
 - id: 'ava'
-  categories: ['angular', 'rxjs']
-  description: 'Angular Voting App'
+  categories: ['angular', 'firebase']
+  description: 'Angular Voting'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
 
 - id: 'ana'
-  categories: ['angular', 'rxjs', 'node', 'mongo']
-  description: 'Angular Nightlife App'
+  categories: ['angular', 'node', 'mongo']
+  description: 'Angular Nightlife'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
 
 - id: 'apa'
-  categories: ['angular', 'rxjs']
-  description: 'Angular Pinterest App'
+  categories: ['angular', 'firebase']
+  description: 'Angular Pinterest'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
 
 - id: 'ata'
   categories: ['angular', 'rxjs', 'mongo']
-  description: 'Angular Trading App'
+  description: 'Angular Trading'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
 
 - id: 'd3-heat'
-  categories: ['angular', 'rxjs', 'mongo']
-  description: 'Angular Trading App'
+  categories: ['d3']
+  description: 'World Temperature Heat Map'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
 
 - id: 'd3-map'
-  categories: ['d3']
-  description: 'Angular Trading App'
+  categories: ['d3', 'jquery']
+  description: 'Meteor Strikes Plotted'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
 
 - id: 'd3-scatter'
   categories: ['d3']
-  description: 'Angular Trading App'
+  description: 'Doping in Bicycling'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
 
 - id: 'react-gol'
-  categories: ['d3']
-  description: 'Angular Trading App'
+  categories: ['react', 'd3']
+  description: 'Game of Life'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
 
 - id: 'node-image'
-  categories: ['d3']
-  description: 'Angular Trading App'
+  categories: ['node', 'angular', 'mongo']
+  description: 'Image Search Abstraction'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
 
 - id: 'ansible-linconf'
   categories: ['ansible']
-  description: 'Ansible Ansible'
+  description: 'Ansible Roles - Linconf'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
   img: 'sprite-project-angular'
@@ -74,7 +74,7 @@
 
 - id: 'bash-rw'
   categories: ['shell']
-  description: 'Rotate Wallpapers'
+  description: 'Bash Scripts'
   url: 'https://fcc-chadsheets-com.firebaseapp.com/av/'
   git: 'angular-voting-app'
   img: 'sprite-project-angular'

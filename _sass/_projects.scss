@@ -34,22 +34,35 @@
   }
 }
 
+.project-grid-item:hover {
+  & .project-popup-title {
+    transform:translateY(100%);
+  }
+  & .project-popup-footer {
+    transform:translateY(-100%);
+  }
+}
 
-.popup-title {
+.project-popup {
   position:absolute;
-  top:100%;
   width:100%;
   transition: transform 250ms;
   vertical-align: bottom;
-}
-.popup-title span {
-  display:block;
-  margin:0;
-  background-color: black;
-}
+  text-align: center;
 
-.project-grid-item:hover .popup-title {
-  transform:translateY(-100%);
+  &-title {
+    top:-25px;
+  }
+
+  &-footer {
+    top:100%;
+    background: rgba(37, 37, 38, 0.75);;
+  }
+  
+  &>span {
+    display:block;
+    margin:0;
+  }
 }
 
 .project-image {
@@ -70,62 +83,45 @@
 }
 
 .sprite-logo{
+  background: url(/assets/img/sprite-logos-small.png);
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+
   &-rxjs{
     background-position: 0px -0px;
   }
 
   &-react{
-    background-position: -200px 0px;
+    background-position: -25px 0px;
   }
 
   &-node{
-    background-position: -400px 0px;
+    background-position: -50px 0px;
   }
 
   &-mongo{
-    background-position: 0px -200px;
+    background-position: 0px -25px;
   }
 
   &-jquery{
-    background-position: -200px -200px;
+    background-position: -25px -25px;
   }
 
-  &-rtdb{
-    background-position: -400px -200px;
+  &-firebase{
+    background-position: -50px -25px;
   }
 
   &-ansible{
-    background-position: 0px -400px;
+    background-position: 0px -50px;
   }
 
   &-d3{
-    background-position: -200px -400px;
+    background-position: -25px -50px;
   }
 
   &-angular{
-    background-position: -400px -400px;
-  }
-}
-.sprite-project-angular{
-  background: url(/assets/img/sprite-projects-angular-compressed.png);
-  display: inline-block;
-  min-height: 200px;
-  width: 100%;
-
-  &-aca{
-    background-position: 0px 0px;
-  }
-  &-ana{
-    background-position: -300px 0px;
-  }
-  &-apa{
-    background-position: -600px 0px;
-  }
-  &-ata{
-    background-position: 0px -200px;
-  }
-  &-ava{
-    background-position: -300px -200px;
+    background-position: -50px -50px;
   }
 }
 
